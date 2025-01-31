@@ -1,0 +1,168 @@
+.hero{
+    position: relative;
+
+}
+
+.banner-img{
+
+    width: 100%;
+    mask-image:linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient((to right, transparent, black 75%));
+}
+
+.hero-caption{
+
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+
+.caption-img{
+width: 90%;
+max-width: 420px;
+margin-bottom: 30px;
+}
+
+.hero-caption p{
+
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+
+}
+
+.hero-btns .btn img{
+
+    width: 25px;
+}
+
+.hero-btns .btn{
+
+    border:0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap:10px;
+    font-size:15px;
+    font-weight:600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+.hero-btns .btn.dark-btn{
+
+    color: white;
+    background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover{
+
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover{
+
+    background: #6d6d6e66;
+}
+.more-cards{
+
+    padding: 6%;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+      height: 70vh;
+    }
+  
+    .hero-caption {
+      bottom: 10%;
+      left: 5%;
+      max-width: 60%;
+    }
+  
+    .caption-img {
+      width: 70%;
+    }
+  
+    .hero-caption p {
+      font-size: 16px;
+      max-width: 400px;
+    }
+  
+    .hero-btns {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .btn {
+    
+
+        height: 45px;
+        width: 120px;
+        font-size: 11px;
+      padding: 8px 15px;
+    }
+  
+    .more-cards {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Mobile (480px and below) */
+  @media (max-width: 480px) {
+    .hero {
+      height: 60vh;
+    }
+  
+    .hero-caption {
+      bottom: 5%;
+      left: 5%;
+      max-width: 80%;
+    }
+  
+    .caption-img {
+      width: 80%;
+    }
+  
+    .hero-caption p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+  
+    .hero-btns {
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+  
+    .btn {
+        width: 120px;
+      font-size: 14px;
+      padding: 8px 12px;
+
+    }
+  
+    .more-cards {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .footer {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
